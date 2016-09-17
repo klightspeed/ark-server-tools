@@ -10,7 +10,7 @@
 arkstVersion='1.6-pre3'
 arkstTag=''
 arkstCommit=''
-arkstGithubRepo="FezVrasta/ark-server-tools"
+arkstGithubRepo="klightspeed/ark-server-tools"
 
 doUpgradeTools() {
   local sudo=sudo
