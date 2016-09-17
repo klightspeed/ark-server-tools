@@ -4,7 +4,7 @@
 # Net Installer, used with curl
 #
 
-arkstGithubRepo="FezVrasta/ark-server-tools"
+arkstGithubRepo="klightspeed/ark-server-tools"
 
 steamcmd_user="$1"
 channel=${2:-master} # if defined by 2nd argument install the defined version, otherwise install master
