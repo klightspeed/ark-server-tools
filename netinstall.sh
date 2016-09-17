@@ -69,7 +69,7 @@ function doInstallFromRelease(){
     echo "Latest release is ${tagname}"
     echo "Getting commit for latest release..."
     local commit="$(curl -s "https://api.github.com/repos/${arkstGithubRepo}/git/refs/tags/${tagname}" | sed -n 's/^ *"sha": "\(.*\)",.*/\1/p')"
-    doUpgradeToolsFromCommit "$commit"
+    doInstallFromCommit "$commit"
   else
     echo "Unable to get latest release"
     return 1
